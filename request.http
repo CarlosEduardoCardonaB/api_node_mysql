@@ -1,14 +1,32 @@
 ###
 GET http://localhost:3000/api/get HTTP/1.1
 
+###
+GET http://localhost:3000/api/get/7 HTTP/1.1
+
 
 ###
 POST http://localhost:3000/api/post HTTP/1.1
 Content-Type: application/json
 
 {
-    "idbooks": 4,
-    "booktitle": "Los 4 mosqueteros",
-    "bookautor": "Pepito escritor",
-    "bookedision": 45678
+    "idbooks": 7,
+    "booktitle": "Javascript avanzado",
+    "bookautor": "Dev dev",
+    "bookedision": 4565748
 }
+
+###
+PUT http://localhost:3000/api/put/7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "idbooks": 7,
+    "booktitle": "Javascript avanzado 2",
+    "bookautor": "Desarrollador",
+    "bookedision": 98765
+}
+
+###
+
+DELETE http://localhost:3000/api/delte/2 HTTP/1.1
